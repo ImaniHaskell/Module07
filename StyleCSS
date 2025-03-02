@@ -1,22 +1,83 @@
-p {margin-right: 100px;
-    margin-left: 100px;}
-  li {margin-right: 100px;
-    margin-left: 100px;}
-  header {color: rgb(0, 0, 0);}
-  body {background-color: papayawhip;}
-  h1 {text-align: center;}
-  h2 {text-align: center;}
-  h3 {margin-right: 100px;
-    margin-left: 100px;}
-  img {display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 50%; }
-  .button {background-color: brown;
-    margin: 4px 2px;
-    color: white;
-    display: inline-block;
-    padding: 10px 25px;
-    text-align: center;
-    font-size: 16px;}
-    footer {color: brown;}
+html {}
+
+body{background-image: url('../images/pasta.jpg'); background-repeat: no-repeat; background-size: cover;
+    background-attachment: fixed; background-position: center center;}
+
+body::before{content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.246); z-index: -1;}
+
+h1{text-align: center; color: rgb(162, 123, 32); margin:10px; background-color: rgba(255, 255, 255, 0.318); padding: 90px; font-size: 25px; margin-right: 140px; margin-left: 140px;}
+
+h2{margin:10px; text-align: center}
+
+h3{margin:10px; text-align: right}
+
+p{margin:50px; text-align: left}
+
+.topnav{overflow: hidden; background-color: ); padding-bottom:8px; padding-top:8px; width: 100%; box-shado: 0px 2px 5px #000000; position: sticky; justify-content: space-between;} 
+
+.topnav a{float:right; display:block; color: rgb(0, 0, 0); font-size: 20px; padding: 30px; border-radius:100%; margin-right: 10px;}
+
+.topnav a.active {background-color: #c5915d; color: white; box-shadow: 0px 2px 5px #000000}
+
+.topnav a:hover {background-color: #1f851f; color: rgb(255, 255, 255); box-shadow: 0px 2px 5px #000000}
+
+.topnav .LIR {color: black; font-size: 3rem; text-align: left; margin-left: 60px; scroll-padding-top: 0px; padding-top: 10px; white-space: nowrap;}
+
+.hamburger {font-size: 3rem; color: rgb(0, 0, 0); cursor: pointer; background-color: rgb(255, 237, 77); box-shadow: 0px 2px 5px #000000; 
+    padding-bottom:8px; padding-top:8px;}
+
+.mobile-menu {display: none; position: absolute; top: 60px; right: 0; background-color: #333; width: 100%;}
+    
+.mobile-menu a {display: block; padding: 10px; color: white; text-decoration: none; }
+
+.hamburger:hover + .mobile-menu {display: block; background-color: #c5915d;}
+
+.mobile-menu a:hover {background-color: rgb(162, 153, 71); color: black;}
+
+.hamburger:hover {background-color: ;}
+
+footer{ background-color: #1f851f;}
+
+footer a{}
+
+div.gallery:hover {border: 1px solid #777;}
+
+div.desc {text-align: center; padding: 15px;}
+
+div.gallery {border: 1px solid #ccc; margin: 5px; ; width: 180px; float: left;}
+  
+div.gallery:hover {border: 1px solid #777;}
+
+
+
+
+
+  
+
+
+
+
+
+/* Media Query for Small Screens */
+@media (max-width: 1050px) 
+{.topnav {display: ;}  
+.topnav .LIR {font-size: 2rem;}
+.hamburger {display: }  
+}
+@media (max-width: 900px) 
+{.topnav {display: none;}  
+.topnav .LIR {font-size: 1rem; display}
+}
+
+@media (max-width: 700px) 
+{.topnav {display: none;}  
+.LIR {font-size: 1rem; :}
+}  
+@media (min-width: 900px) 
+{.topnav {display: ;}
+.hamburger {display:none ;}
+.LIR {font-size: 1rem;}
+}
+
+
+
